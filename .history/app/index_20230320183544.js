@@ -21,7 +21,7 @@ const Home = () => {
                     <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%"/>
                 ),
                 headerRight: () => (
-                    <ScreenHeaderBtn iconUrl={images.profile} dimension="100%"/>
+                    <ScreenHeaderBtn iconUrl={icons.profile} dimension="100%"/>
                 ),
                 headerTitle: ""
             }}
@@ -37,8 +37,7 @@ const Home = () => {
                     <Welcome
                     
                     />
-                    <Nearbyjobs />
-                    <Popularjobs />
+                    <Nearbyjobs
                 </View>
             </ScrollView>
         </SafeAreaView>
