@@ -28,7 +28,7 @@ const useFetch = (endpoint, query) => {
             setData(response.data.data);
             setIsLoading(false);  
         } catch (error) {
-            
+            setError(error);
             alert('Error fetching data. Please try again later.');
         } finally {
             setIsLoading(false);
@@ -46,7 +46,7 @@ const useFetch = (endpoint, query) => {
         fetchData();
     }
 
-    return { data, isloading, error, refetch }; 
+    return { data, is    loading, error, refetch }; 
 
 }
     
